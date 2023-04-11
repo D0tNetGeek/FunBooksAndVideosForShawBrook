@@ -1,0 +1,8 @@
+{
+    "dotnet-test-explorer.testProjectPath": "**/*Tests",
+    "nunitTestRunner.projectsPatterns": [
+        "**/bin/*.Tests.dll",
+        "*Tests*"
+    ],
+    "testing.alwaysRevealTestOnStateChange": true
+}

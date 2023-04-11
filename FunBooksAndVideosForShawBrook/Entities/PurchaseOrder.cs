@@ -1,23 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using FunBooksAndVideosForShawBrook.Entities;
-
-namespace FunBooksAndVideos.Entities
+namespace FunBooksAndVideosForShawBrook.Entities
 {
-    [ExcludeFromCodeCoverage]
-    public record PurchaseOrder
+    public class PurchaseOrder
     {
-        public int Id { get; set; }
-
-        public DateTime CreatedAt { get; set; }
-
-        public decimal TotalPrice { get; set; }
-
-        public Customer Customer { get; set; }
-
-        public List<Product> Products { get; set; }
-
-        public ShippingSlip ShippingSlip { get; set; }
+        public int CustomerId { get; set; }
+        public List<Product> ItemLines { get; set; }
     }
 }

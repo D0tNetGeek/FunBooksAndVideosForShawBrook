@@ -1,18 +1,11 @@
-using System.Diagnostics.CodeAnalysis;
-
-namespace FunBooksAndVideos.Entities
+namespace FunBooksAndVideosForShawBrook.Entities
 {
-    [ExcludeFromCodeCoverage]
-    public record Product
+    public class Product
     {
         public int Id { get; set; }
-
         public string Name { get; set; }
-
+        public ProductType ProductType { get; set; }
+        public MembershipType MembershipType {get; set;}
         public decimal Price { get; set; }
-
-        public bool IsPhysical { get; set; }
-
-        public bool IsMembership { get; set; }
     }
 }
